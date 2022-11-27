@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popppins', sans-serif;
+}
+.container{
+    width: 90%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(caca/background.gif);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.carta{
+    width: 75px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    border: 5px solid #fff;
+    background: #000;
+    padding: 12px 34px;
+    position: relative;
+    cursor: pointer
+}
+nav ul li:hover{
+    border: 1px solid #87CEEB;
+    background: #ff0000;
+    transition: 1s;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #87CEEB;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+    
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(caca/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.textbox a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+    
+}
+.social-icon{
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+}
+.social-icon img{
+    width: 75px;
+    display: block;
+    margin: 25px 25px;
+}
+.sub-headera{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(caca/meow1.gif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.lionlinks{
+    flex: 1;
+    text-align: center;
+}
+.lionlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.lionlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.lionlinks ul li::after{
+    content= '';
+    width: 0%;
+    height: 2px;
+    background: #800000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.lionlinks ul li:hover::after{
+    width: 100%;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.about-lion{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding-top: 30px 2px;
+    
+}
+.about-col img{
+    width: 75%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.pride{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffd700;
+    border: 5px solid #ffd700;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    }
+.pride:hover{
+    border: 1px solid #000;
+    background: #000;
+    transition: 1s;
+}
+.marchy{
+    border: 1px solid #000;
+    background: transparent;
+    color: #000;
+}
+.marchy:hover{
+    color: #fff;
+    }
+.join{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+p{
+    color: #000000;
+    font-size:  14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    flex-basis: 31%;
+    background: #87ceeb;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.price h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.price:hover{
+    box-shadow: 0 0 20px 0px rgb(0,0,0);
+}
+blog{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 75%;
+}
+.blog-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.blog-left p{
+    color: #999;
+    padding: 0;
+}
+.blog-right{
+    flex-basis: 32%;
+}
+.blog-right h3{
+    background: #87cefa;
+    color: #000;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.blog-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    box-sizing: border-box;
+}
+.comment-box{
+    border: 1px solid #000;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+    
+}
+comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+    
+}
+.sub-headeraa{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(caca/hii.gif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-headeraaa{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(caca/sleepy.gif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
